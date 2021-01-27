@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(MyApp());
@@ -91,14 +90,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _readStoredData() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String sData = prefs.getString('user_data') ?? "Hakuna Kitu";
-    setState(() {
-      storedData = sData;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,7 +111,11 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _readStoredData,
+        onPressed: () {
+          setState(() {
+            storedData += storedData;
+          });
+        },
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
