@@ -3,7 +3,7 @@
 A new Flutter project.
 
 ## To Change Notification Icon
-1. Create your mipmap notification icon. You can do this easily using Roman's Notification Icon Generator - Click on "Notification Icon Generator [Found Here]("https://romannurik.github.io/AndroidAssetStudio/icons-notification.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&name=ic_stat_ac_unit")
+1. Create your mipmap notification icon. You can do this easily using Roman's Notification Icon Generator - Click on "Notification Icon Generator (Found Here)["https://romannurik.github.io/AndroidAssetStudio/icons-notification.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&name=ic_stat_ac_unit"]
 
 2. On the left panel, click "Image" to upload your own image or use ClipArt or text as provided.
 
